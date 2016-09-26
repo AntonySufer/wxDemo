@@ -21,7 +21,7 @@
     </block>
   </swiper>
 
-   <scroll-view scroll-y="true" style="height: 500px;" lower-threshold="80" upper-threshold="80"  bindscrolltoupper="upper" bindscrolltolower="lower" bindscroll="scroll" scroll-into-view="menuList1" scroll-top="80"> 
+   <scroll-view scroll-y="true" style="height: 500px;" lower-threshold="80" upper-threshold="80"  bindscrolltoupper="upper" bindscrolltolower="lower"  scroll-into-view="menuList1" scroll-top="80"> 
    <block wx:for="{{menuList}}">
     <button type="default" bindtap="buttonSelect" id="menuList{{item.index}}" > {{item.menu}} </button>
     </block>
