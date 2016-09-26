@@ -1,0 +1,13 @@
+{
+  "pages":[
+    "pages/index/index",
+    "pages/logs/logs",
+    "pages/appIndex/appIndex"
+  ],
+  "window":{
+    "backgroundTextStyle":"dark",
+    "navigationBarBackgroundColor": "black",
+    "navigationBarTitleText": "firstDemo",
+    "navigationBarTextStyle":"white"
+  }
+}

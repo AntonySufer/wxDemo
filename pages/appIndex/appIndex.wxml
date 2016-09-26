@@ -1,0 +1,31 @@
+<!--<view class="section">
+  <view class="section__title">picker选择器</view>
+  <picker bindchange="bindPickerChange" value="{{index}}" range="{{array}}" >
+    <view class="picker" >
+      测试picker：{{array[index] || "请选择"}}
+    </view>
+  </picker>
+</view>-->
+<!--swiper 测试-->
+ <loading hidden="{{loadingOption.hidden}}" />
+ <toast  icon="warn" hidden="{{loadingOption.toast1Hidden}}" duration="{{loadingOption.duration}}"  bindchange="toastChange">发生错误</toast>
+
+
+<view class="appIndex">
+  <swiper indicator-dots="{{option.indicatorDots}}"
+    autoplay="{{option.autoplay}}" interval="{{option.interval}}" duration="{{option.duration}}" bindchange="getImgValue" >
+    <block wx:for="{{imgData}}">
+      <swiper-item  >
+        <image src="{{item}}"   class="slide-image" height="150px"/>
+      </swiper-item>
+    </block>
+  </swiper>
+
+   <scroll-view scroll-y="true" style="height: 500px;" lower-threshold="80" upper-threshold="80"  bindscrolltoupper="upper" bindscrolltolower="lower" bindscroll="scroll" scroll-into-view="menuList1" scroll-top="80"> 
+   <block wx:for="{{menuList}}">
+    <button type="default" bindtap="buttonSelect" id="menuList{{item.index}}" > {{item.menu}} </button>
+    </block>
+  </scroll-view>
+
+</view>
+
