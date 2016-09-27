@@ -1,0 +1,21 @@
+ <!--头条视频推荐-->
+ <view class="">
+    <loading hidden="{{!loading}}" />
+        
+    <scroll-view class="page-body" scroll-y="true" style="height:1000px;" lower-threshold="80" upper-threshold="80" 
+        bindscrolltoupper="upper" bindscrolltolower="lower"  scroll-into-view=""  scroll-top="80"> 
+         <navigator wx:for="{{textData}}" wx:for-index="index" >
+            <view>
+            <image class="img-wrap"  alt="" src="{{item.group.header_img}}" /> 
+             <text class="media-name">{{item.group.user_name}}</text>
+            </view>
+           
+          <view class="item">
+           <view class="meta">
+                <text class="title">{{item.group.content}}</text>
+            </view>
+           </view>
+            
+        </navigator>
+    </scroll-view>
+  </view>

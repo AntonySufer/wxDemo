@@ -7,7 +7,7 @@
 var app = getApp()
 Page({
   data: {
-    loadingOption :{hidden:false,toast1Hidden:false ,duration:1500},//弹出层属性
+    loadingOption :{hidden:false,toast1Hidden:true ,duration:1500},//弹出层属性
     errorMsg:"",  //错误提示
     array:[], //piceker 
     index :0,
@@ -101,14 +101,14 @@ Page({
   },
   //picker 选中确定
   bindPickerChange: function(e) {
-    console.log('picker发送选择改变，携带值为', e.detail.value);
+  //  console.log('picker发送选择改变，携带值为', e.detail.value);
     this.setData({
       index: e.detail.value
     })
   },
     //swiper 选中
     getImgValue: function(e) {
-         console.log('swiper发送选中', e.detail.current);  //当前页
+  //       console.log('swiper发送选中', e.detail.current);  //当前页
     this.setData({
       current: e.detail.current
     })
