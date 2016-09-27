@@ -1,7 +1,6 @@
  <!--头条视频推荐-->
  <view class="appIndex">
     <loading hidden="{{!loading}}" />
-
     <scroll-view scroll-y="true" style="height:1000px;" lower-threshold="80" upper-threshold="80" 
         bindscrolltoupper="upper" bindscrolltolower="lower"  scroll-into-view=""  scroll-top="80"> 
         <block wx:for="{{imgData}}">

@@ -39,8 +39,8 @@ Page({
                   textNewData = reuslt.data.data;
                  
                  textNewData.forEach(function(item,index){
-                     var header_img = item.group.user.avatar_url ;
-                     var user_name = item.group.user.name ;
+                     var header_img = item.group.user.avatar_url ; //用户头像
+                     var user_name = item.group.user.name ; //用户名
                      textNewData[index].group.header_img = header_img;
                      textNewData[index].group.user_name = user_name;
                     // headDatas.push(header_img);
