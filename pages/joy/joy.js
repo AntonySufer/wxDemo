@@ -2,7 +2,7 @@
 /***
  * @author antony
  * @date 20160924
- * @desc 进入头条视频
+ * @desc 进入段子
  *       
  */
    //今日头条请求地址
@@ -23,7 +23,7 @@ Page({
    onShow: function () {
    
   },
-  //获取推荐视频数据
+  //获取推荐段子数据
   getVideoList: function(type) {
        var _this = this ;
             _this.setData({
