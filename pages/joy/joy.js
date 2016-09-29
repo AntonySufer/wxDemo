@@ -1,7 +1,7 @@
 //index.js
 /***
  * @author antony
- * @date 20160924
+ * @date 20160922
  * @desc 进入段子
  *       
  */
